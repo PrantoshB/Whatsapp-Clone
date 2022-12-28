@@ -1,0 +1,237 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.head {
+    color: white;
+    background: #006054;
+    margin: 0;
+    padding: 3%;
+    position: sticky;
+    inset: 0;
+}
+
+.apptitle {
+    margin: 0;
+    width: 60%;
+    font-weight: 500;
+}
+
+.tophead {
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+    margin-top: 3%;
+}
+
+.bottomhead {
+    height: 0.25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.bottomhead ul {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.bottomhead ul li {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+#groupsymbol {
+    width: 5%;
+    text-align: center;
+}
+
+#active {
+    border-bottom: 2px solid white;
+}
+
+.count {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    padding: 3%;
+    margin-left: 5%;
+}
+
+#chatcount {
+    background: white;
+    color: #006054;
+}
+
+#msgcount {
+    color: white;
+    background: rgb(5, 204, 5);
+    padding: 1%;
+    text-align: center;
+    margin: 0;
+}
+
+.status-dot {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+.message-section {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.message-section::-webkit-scrollbar {
+    display: none;
+}
+
+.single-msg {
+    display: flex;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.single-msg h4 {
+    margin: 0;
+}
+
+.user-and-message {
+    width: 90%;
+    margin-left: 4%;
+}
+
+.name-and-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.userimage {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message,
+.time {
+    margin: 0;
+    color: gray;
+}
+
+.msg-and-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.time {
+    font-size: 0.7rem;
+}
+
+#check,
+#media-type,
+#mic {
+    font-size: 1.2rem;
+    margin-right: 2%;
+}
+
+.read {
+    color: rgb(25, 171, 216);
+}
+
+#media-type,
+.unread {
+    color: gray;
+}
+
+.typing,
+.not-opened {
+    color: rgb(5, 204, 5);
+}
+
+.github {
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    .single-msg h4 {
+        font-size: 0.9rem;
+
+    }
+
+    .mainsection {
+
+        border: 0.3rem solid rgb(255, 255, 255);
+        background: white;
+        width: 290px;
+        margin: 0 auto;
+        border-radius: 30px;
+        height: 90vh;
+    }
+
+    .head {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding: 4%;
+    }
+
+    .message-section {
+        height: 72vh;
+    }
+
+    .tophead {
+        margin-top: 5%;
+        height: 6vh;
+        margin-bottom: 4%;
+    }
+
+    body {
+        padding: 1%;
+        background: black;
+    }
+
+    .github {
+        margin-top: 5%;
+        text-align: center;
+        color: white;
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+    .mainsection {
+        height: 72vh;
+    }
+
+    .message-section {
+        height: 57.5vh;
+    }
+}
